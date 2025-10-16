@@ -76,7 +76,7 @@ body {
     color: var(--paper-white);
     border: 1px solid var(--gold);
     padding: 12px 30px;
-    border-radius: 5px; /* Leggermente arrotondato */
+    border-radius: 5px; 
     font-weight: bold;
     cursor: pointer;
     text-transform: uppercase;
@@ -136,6 +136,7 @@ body {
 
 .details {
     margin-top: 20px;
+    margin-bottom: 10px; /* Aggiunto piccolo margine sotto i dettagli */
 }
 
 .separator {
@@ -164,8 +165,22 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px; 
-    margin-top: 30px; 
+    margin-top: 15px; /* Rimosso grande margine, gestito dai testi 'details' */
 }
+
+/* Allinea i pulsanti social uno accanto all'altro */
+.buttons-container.social-buttons {
+    flex-direction: row; /* Modifica da colonna a riga */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Riduce il padding per i pulsanti social più piccoli */
+.social-buttons .action-button {
+    padding: 10px 15px;
+    font-size: 0.9em;
+}
+
 
 .action-button {
     text-decoration: none;
